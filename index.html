@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Js Ecommerce Website</title>
+</head>
+
+<body>
+  <header class="container1">
+    <section class="Top-text">
+      <div class="text2">
+        <p class=""> Free shipping, 30 days return or refund garantee</p>
+      </div>
+      <div class="SignIn"> <a class="" href="/">SIGN IN</a>
+        <a class="" href="/">SIGN UP</a>
+      </div>
+    </section>
+    <div class="nav-head">
+      <div class="div">
+        <ul>
+          <li class="nav_text"> <a href="/index.html">HOME</a></li>
+          <li class="nav_text"> <a href="#">ABOUT</a></li>
+          <li class="nav_text"> <a href="#">PRODUCTS</a></li>
+          <li class="nav_text"> <a href="#">CONTACT</a></li>
+          <li class="cart"> <a href="addTocart.html" id="cardValue">
+              <i class="fa-solid fa-cart-shopping">0</i> </a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- <a  href="./addTocart.html"></a> -->
+  <!-- hero section -->
+  <section class="sec2">
+    <div class="sec-containt">
+
+      <div class="text"> EXPLORE THE LATEST IN TECH INDUSTRIES.</div>
+      <div class="main">
+        <p class="upper">
+        <pre class="upper">
+Your Desitination For 
+Cutting-Edge Gadgets!</pre>
+        </p>
+      </div>
+      <div class="mid-text">
+        <button type="button" class="btn btn-primary">Explore Our Products</button>
+      </div>
+    </div>
+    <div class="img"> <img src="./public/image.png" class="img"></div>
+  </section>
+  <!-- section-extra-product -->
+  <section class="sec3">
+    <div class="box_1">
+      <div class="sec3-containt">
+        <p class="first-text"> new year sale</p>
+        <p class="mid-text"> Get and Extra 50% off</p>
+        <p class="last-text"> <a href="#"> Shop Now</a></p>
+      </div>
+      <div class="img-sec3"> <img src="./public/componants/laptop.png"></div>
+    </div>
+
+    <div class="box_1">
+      <div class="sec3-containt">
+        <p class="first-text"> new year sale</p>
+        <p class="mid-text"> 40% Discount On Speakers</p>
+        <p class="last-text"> <a href="#"> Shop Now</a></p>
+      </div>
+      <div class="img-sec3"> <img src="./public/componants/headphone.png"></div>
+    </div>
+
+    <div class="box_1">
+      <div class="sec3-containt">
+        <p class="first-text"> new year sale</p>
+        <p class="mid-text"> Get and Extra 50% off</p>
+        <p class="last-text"> <a href="#"> Shop Now</a></p>
+      </div>
+      <div class="img-sec3"> <img src="./public/componants/image.png"></div>
+    </div>
+
+
+  </section>
+  <!-- section 4 -->
+  <section class="sec4_box">
+    <div class="sec4">
+      <div class="sec4-text-alin">
+        <div class="sec4-icon"> <i class="fa-solid fa-truck-fast"></i>
+        </div>
+        <div class="sec4-text">
+          <p class="sec4-first-text"> Worldwide shipping</p>
+          <p>Order Above $100</p>
+        </div>
+      </div>
+
+      <div class="sec4-text-alin">
+        <div class="sec4-icon"> <i class="fa-solid fa-right-left"></i>
+        </div>
+        <div class="sec4-text">
+          <p class="sec4-first-text"> Easy 30 Day Returns</p>
+          <p>Back Returns in 7 Days</p>
+        </div>
+      </div>
+
+      <div class="sec4-text-alin">
+        <div class="sec4-icon"><i class="fa-sharp fa-solid fa-piggy-bank"></i>
+        </div>
+        <div class="sec4-text">
+          <p class="sec4-first-text"> Money Back Guarantee</p>
+          <p>Guarantee With in 30-Days</p>
+        </div>
+      </div>
+
+      <div class="sec4-text-alin">
+        <div class="sec4-icon"> <i class="fa-solid fa-headphones"></i>
+        </div>
+        <div class="sec4-text">
+          <p class="sec4-first-text"> Easy Online Support</p>
+          <p>24x7 Any Time Support</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- section 5 -->
+  <section class="sec5">
+
+    <div class="game">
+      <h2>Checkout the products</h2>
+    </div>
+
+    <div class="game-board">
+      <div id="productContainer">
+      </div>
+    </div>
+
+  </section>
+  <!-- template for showing products-->
+
+  <template id="productTemplate">
+    <div class="cards" id="cardvalue">
+      <article class="information">
+        <span class="categry"> </span>
+        <div class="imageContainer">
+          <img class="productImg">
+        </div>
+        <h2 class="productName"></h2>
+        <div class="prodRating"></div>
+        <p class="description"></p>
+        <div class="priceElem">
+          <p class="ProdAct"> </p> 
+          <p class="discount"></p>
+        </div>
+        <div class="prodStockAval">
+          <p> Total product Available:</p>
+          <p class="productStock"> </p>
+        </div>
+        <div class="ProductQuantityElem">
+          <p> Quantity(pieces):
+          </p>
+          <div class="stockElement">
+            <button class="cartIncrement">+</button>
+            <p class="prodQuantity">1</p>
+            <button class="cartDecrement">-</button>
+          </div>
+        </div>
+        <button class="AddCart"> <p>Add to cart</p> <i class="fa-solid fa-cart-shopping"></i> </button>
+      </article>
+    </div>
+  </template>
+
+  <div class="sec-5-last responsive-image-1">
+    <section class="sec-5">
+      <div class="Company responsive-image-1">
+        <h4 onclick="run()" id="Company"> Company</h4>
+
+
+        <ul id="hide">
+          <li>Abouts us</li>
+          <li>Our Services</li>
+          <li>Privacy Policy</li>
+        </ul>
+
+      </div>
+      <div class="Get">
+        <h4 onclick="run2()" id="Get"> Get Help</h4>
+
+
+        <ul id="show">
+          <li>FAQ</li>
+          <li>Payment</li>
+          <li>Order satus</li>
+        </ul>
+
+      </div>
+      <div class="Follow">
+        <h4 id="Follow" onclick="run3()"> Follow US</h4>
+        <div class="follow-show" id="show2">
+          <div id="show2" class="insta"> <a href="https://www.instagram.com/?hl=en">instagram</a></div>
+          <div id="show2" class="insta"> <a href="https://www.linkedin.com/feed/?trk=onboarding-landing">linkedln</a>
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </section>
+    <div class="last-div">&copy;copyright.All rights reserved</div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
