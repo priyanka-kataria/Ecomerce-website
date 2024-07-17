@@ -1,5 +1,5 @@
-import { addToCart } from "../addToCart";
-import { getCartProductFromLocal } from "../getCartProduct";
+import { getCartProductFromLocal } from "./getCartProduct";
+
 
 
 export const summary = () => {

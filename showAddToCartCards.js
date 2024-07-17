@@ -1,9 +1,10 @@
-import products from '../../api/product.json';
-import { getCartProductFromLocal } from '../getCartProduct';
-import { LSpriceQuantity } from '../localstorPriceQuantity';
+import products from './api/product.json';
 import { CartIncrementDecrement } from './cartIncrementDecrement';
+import { getCartProductFromLocal } from './getCartProduct';
+import { LSpriceQuantity } from './localstorPriceQuantity';
 import { removeCartElement } from './removeElementFromCart';
 import { summary } from './Summery';
+
 
 
 

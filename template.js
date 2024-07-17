@@ -1,7 +1,8 @@
+import { addToCart } from "./addToCart";
+import { homeToggle } from "./homeToggle";
+
 const productContainer= document.querySelector('#productContainer')
 const productTemplate= document.querySelector("#productTemplate");
-import { addToCart } from './addToCart';
-import { homeToggle} from './homeToggle';
 
 export const showProductContainer=(products)=>{
     if(!products){

@@ -1,5 +1,6 @@
-import { getCartProductFromLocal } from "../getCartProduct";
+import { getCartProductFromLocal } from "./getCartProduct";
 import { summary } from "./Summery";
+
 
 export const CartIncrementDecrement = ( event, id, stock,price ) => {
     let currentCardElement = document.querySelector( `#card${ id }` );
@@ -51,5 +52,5 @@ export const CartIncrementDecrement = ( event, id, stock,price ) => {
     productQuantity.innerHTML = quantity;
     productprice.innerHTML= `₹${localStPrice.toFixed(2)}`;
     // console.log( quantity, "hello" );
-summary();
+  summary();
 }

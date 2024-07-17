@@ -1,6 +1,7 @@
 import './style.css'
 import products from "./api/product.json"
-import { showProductContainer } from './public/template';
+import { showProductContainer } from './template';
+
 
 showProductContainer(products);
 

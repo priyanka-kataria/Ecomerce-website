@@ -1,5 +1,6 @@
-import { getCartProductFromLocal } from "../getCartProduct";
-import { updateCartValue } from "../updateCartValue";
+
+import { getCartProductFromLocal } from "./getCartProduct";
+import { updateCartValue } from "./updateCartValue";
 
 export const removeCartElement = ( event, id, ) => {
 
