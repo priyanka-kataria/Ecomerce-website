@@ -5,9 +5,10 @@
 
 }
 
-html{
+html {
   font-size: 95%;
 }
+
 #app {
   font-weight: 600;
   color: #646cff;
@@ -21,7 +22,7 @@ body {
 }
 
 .Top-text {
-  height: 4rem;
+  height: 3rem;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -60,7 +61,7 @@ body {
   margin: 0rem .3rem;
   font-size: 2rem;
   color: rgb(1, 5, 21);
-  
+
 }
 
 .cart {
@@ -89,6 +90,7 @@ body {
   /* justify-content: center; */
   /* justify-items: ; */
   margin: 0rem 2rem;
+  /* position: fixed; */
 
 }
 
@@ -97,18 +99,19 @@ body {
 
 .nav-head {
   display: flex;
-  flex-direction: row;
-  height: 4rem;
+  /* justify-content: center; */
+  align-items: center;
+  height: 3rem;
   background-color: rgba(209, 209, 178, 0.477);
 }
 
 ul li a {
-  font-size: 1.1rem;
+  /* font-size: 1.1rem; */
   list-style: none;
   text-decoration: none;
   color: black;
   font-weight: 500;
- 
+
   list-style: none;
   text-decoration: none;
 
@@ -117,22 +120,24 @@ ul li a {
 ul {
   list-style: none;
   display: flex;
+  justify-content: left;
+  align-items: center;
   color: white;
+  margin-top: .6rem;
 }
 
 ul li {
-
   margin: 1.2rem 1.4rem;
   color: #000;
 }
 
 ul li a:hover {
-  font-size: 1.2rem;
   list-style: none;
   text-decoration: none;
-
-  color: rgb(177, 46, 46);
-
+  color: rgb(177, 40, 40);
+  font-weight: 500;
+  list-style: none;
+  text-decoration: none;
 }
 
 .second {}
@@ -142,32 +147,66 @@ ul li a:hover {
   height: 39rem;
   background-color: hwb(219 25% 10%);
   margin: auto 2rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+ 
+
 }
 
 .sec-containt {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: auto 10rem;
+  /* margin: auto 10rem; */
+  /* width: 50%; */
 
 }
 
 .img {
-
-  margin: auto auto;
+  /* margin: auto auto; */
   display: flex;
   justify-self: center;
 
 }
 
-.img img {
-  height: 15rem;
-  margin-right: 20rem;
+.img img{
+  height: 20rem;
+  margin-left: -16rem;
+ 
+}
+
+@media(max-width:900px) {
+  .img {
+    height: 10rem;
+    margin-top: 3rem;
+    margin-left: -1rem;
+  }
+  .img img{
+    height: 13rem;
+    margin-top: -1rem;
+    margin-left: .01rem;
+  }
+
+  .sec2 {
+    height: 39rem;
+    background-color: hwb(219 25% 10%);
+    margin: auto 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  
+  .img-sec3 img {
+    /* height: 6rem; */
+    width: 100%;
+    margin-right: 3rem;
+  }
+  
+ 
+  
 }
 
 .main {
@@ -192,17 +231,17 @@ ul li a:hover {
 }
 
 .text2 {
-  text-align: center;
+  /* text-align: center; */
   font-weight: 300;
   font-size: 1.2rem;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+  display: flex;
+  justify-content: right;
+  align-items: center;
 
 }
 
 .text2 p {
-  margin: 1rem 8rem;
+  margin-top: 1rem;
 }
 
 .btn {
@@ -239,7 +278,7 @@ ul li a:hover {
   align-self: center;
 }
 
-.box_1{
+.box_1 {
   /* border-right: 1rem solid black; */
   box-shadow: 0 .1rem .5rem black;
   display: flex;
@@ -260,10 +299,10 @@ ul li a:hover {
 
 .sec3-containt {
   display: flex;
-  flex-direction: column; 
-  
+  flex-direction: column;
+
   margin-left: 1rem;
- 
+
 }
 
 .sec3-containt .mid-text {
@@ -275,11 +314,51 @@ ul li a:hover {
 .sec3-containt .first-text {
   text-transform: uppercase;
   font-size: .9rem;
- 
+
 
 }
 
-
+@media(max-width:750px) {
+  .sec3 {
+     margin-top: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+  }
+  .box_1 {
+    box-shadow: 0 .1rem .5rem black;
+    display: flex;
+    flex-direction: row;
+    margin-top: -.4rem;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    width: 60%;
+    height: 20rem;
+    background-color: #fff;
+  }
+  .sec3-containt {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+  
+  }
+  
+  .sec3-containt .mid-text {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: -.5rem;
+  }
+  
+  .sec3-containt .first-text {
+    text-transform: uppercase;
+    font-size: .9rem;
+  }
+  .sec3-containt .last-text{
+    margin-top: -.5rem;
+  }
+}
 
 .sec4 {
   display: flex;
@@ -311,11 +390,12 @@ ul li a:hover {
 
 .sec4-icon {
   color: #4778bd;
- 
+
 }
-.fa-solid{
- font-size: 1.4rem;
-/* color: #3a47c2; */
+
+.fa-solid {
+  font-size: 1.4rem;
+  /* color: #3a47c2; */
 }
 
 .sec4-text {
@@ -332,6 +412,53 @@ ul li a:hover {
   margin: auto;
 }
 
+@media(max-width:700px){
+  .sec4 {
+    display: grid;
+   grid-template-columns: 1fr 1fr;
+   
+   grid-gap: .6rem;
+   /* font-size:rem; */
+    width: 120%;
+    background-color: #fff;
+   margin-left: -2rem;
+    margin-top: 1.2rem;
+  }
+  
+  .sec4_box {
+    margin: auto 21vw;
+  }
+  
+  .sec4-text-alin {
+    display: flex;
+  
+    justify-content: space-evenly;
+    align-items: center;
+  
+    height: 5vh;
+    width: 100%;
+  }
+  
+  .sec4-icon {
+    color: #4778bd;
+    width: .5rem;
+    
+  }
+  
+  .fa-solid {
+    font-size: 1.4rem;
+    /* color: #3a47c2; */
+  }
+  
+  .sec4-text {
+    display: flex;
+    font-size: .8rem;
+    flex-direction: column;
+   margin-left: 1rem;
+  }
+  
+ 
+}
 /* sec5 */
 .sec5 {
   display: flex;
@@ -352,14 +479,14 @@ ul li a:hover {
 .ProductQuantityElem {
   display: flex;
   flex-direction: row;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: baseline;
- 
+
   margin-top: -.3rem;
 
 }
 
-.stockElement{
+.stockElement {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -370,7 +497,8 @@ ul li a:hover {
   background-color: #fff;
 
 }
-.productName{
+
+.productName {
   margin-left: 1rem;
 }
 
@@ -379,8 +507,7 @@ ul li a:hover {
 }
 
 .game {
-  margin: 5rem 23.6rem;
-  text-align: left;
+    text-align: left;
 }
 
 
@@ -389,6 +516,32 @@ ul li a:hover {
   grid-template-columns: 20vw 20vw 20vw;
   grid-gap: 6rem;
 
+}
+@media (max-width:700px){
+  #productContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+  margin: auto 20%;
+  }
+  .sec5 {
+    display: flex;
+    flex-direction: column;
+     justify-content: center;
+    align-items: center; 
+    width: 100%;
+    /* margin: auto 4rem; */
+  
+  }
+  .game{
+    width: 100%;
+    margin-left: 100%;
+    /* margin-right: auto; */
+    
+  }
+  .game-board {
+    width: 100%;
+    margin: 1rem auto;
+  }
 }
 
 
@@ -399,20 +552,19 @@ ul li a:hover {
   height: 60vh;
   width: 20vw;
 } */
-.stockElement> p,
+.stockElement>p,
 button {
- margin-top: -.3rem;
- font-size: 1.5rem;
+  margin-top: -.3rem;
+  font-size: 1.5rem;
 }
 
 
 .cartIncrement {
-  
+
   margin-top: -.3rem;
   font-size: 1.4rem;
-  height: 0vh; 
-   border: .1rem solid white
-  ;
+  height: 0vh;
+  border: .1rem solid white;
 
 }
 
@@ -420,18 +572,17 @@ button {
 
 .cartDecrement {
 
- /* border-radius: 2rem;
+  /* border-radius: 2rem;
 
  height: 20rem;
  width: 20rem;
  display: flex;
  align-items: baseline;
  margin-left: 5rem; */
- margin-top: -.3rem;
- font-size: 1.4rem;
- height: 0rem;
- border: .1rem solid white
- ;
+  margin-top: -.3rem;
+  font-size: 1.4rem;
+  height: 0rem;
+  border: .1rem solid white;
 
 }
 
@@ -442,15 +593,18 @@ button {
   width: 10rem;
   display: flex;
   justify-content: center;
-  
+
   font-size: 1rem;
   font-weight: 600;
-  margin:1rem;
+  margin: 1rem;
 
 }
-.AddCart>p, i{
+
+.AddCart>p,
+i {
   margin: auto;
 }
+
 .AddCart:hover {
   background: #fff;
   color: rgb(24, 27, 27);
@@ -458,7 +612,7 @@ button {
   height: 5vh;
   width: 10vw;
   margin: 1rem 1rem;
-  
+
 }
 
 
@@ -468,21 +622,23 @@ button {
   font-size: 1rem;
   /* margin-left: 10rem; */
 }
-.categry{
+
+.categry {
   background-color: #d0b6b6;
   border-radius: 1rem;
   font-size: 1rem;
- 
+
   text-align: center;
   margin: 1rem 5rem;
-  
+
 }
+
 .discount {
   margin: 0rem 1rem;
   text-decoration: line-through;
 }
 
-.information{
+.information {
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -493,6 +649,25 @@ button {
   background-color: rgba(222, 227, 222, 0.477);
 
 }
+@media (max-width:700px){
+  .information {
+    display: flex;
+    flex-direction: column;
+    
+    /* align-items: center; */
+    height: 25rem;
+    width: 60%;
+    border-radius: 1rem;
+    box-shadow: 0rem .5rem 1rem rgb(189, 189, 92);
+  
+    background-color: rgba(222, 227, 222, 0.477);
+  
+  }
+  .sec-5-last{
+   margin: auto;
+    height: 58rem;
+  }
+}
 
 .description {
   margin-left: 1rem;
@@ -501,13 +676,14 @@ button {
 /* cart Item show  */
 
 #productCartContainer {
- display: flex;
+  display: flex;
   flex-direction: column;
   margin: auto auto;
-  /* justify-content; */
-  
+
+
 }
-.productCartTotalElem{
+
+.productCartTotalElem {
   display: flex;
   flex-direction: column;
   margin: 4rem 5.5vw;
@@ -517,7 +693,8 @@ button {
   align-items: center;
   border: .1rem solid black;
 }
- #information2 {
+
+#information2 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   height: 20vh;
@@ -530,7 +707,8 @@ button {
   box-shadow: 0rem .1rem .2rem rgb(121, 69, 69);
   /* border: 2rem solid rgb(5, 5, 5); */
 
-}  
+}
+
 .remove-to-cart-button {
   background: #000;
   color: azure;
@@ -541,11 +719,12 @@ button {
   align-items: center;
   text-align: center;
   /* font-weight: 600; */
-   /* margin-left: 1rem; */
+  /* margin-left: 1rem; */
   border-radius: .6rem;
-  font-size: 1.5rem; 
+  font-size: 1.5rem;
 
 }
+
 .remove-to-cart-button:hover {
   background: #fff;
   color: rgb(24, 27, 27);
@@ -556,13 +735,14 @@ button {
   align-items: center;
   text-align: center;
   /* font-weight: 600; */
-   /* margin-left: 1rem; */
+  /* margin-left: 1rem; */
   border-radius: .6rem;
-  font-size: 1.5rem; 
+  font-size: 1.5rem;
 
-  
+
 }
-.summary{
+
+.summary {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -629,7 +809,7 @@ footer {
 }
 
 .footer-container .content_4 .bx {
-  color:white;
+  color: white;
 }
 
 .f-design {
@@ -646,59 +826,72 @@ footer {
 
 /***** End Footer Section *****/
 
-.sec-5{
+.sec-5 {
   height: 15rem;
   background-color: rgb(28, 29, 30);
-  color:white;
+  color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
 
 }
-.main-heading ul{
+
+.main-heading ul {
   display: flex;
   flex-direction: column;
-  
+
 }
-.main-heading{
+
+.main-heading {
   margin-top: 10px;
   padding-top: 12px;
 }
-.Company ul, .Get ul, .Follow ul{
+
+.Company ul,
+.Get ul,
+.Follow ul {
   display: flex;
   flex-direction: column;
   margin-left: -2rem;
-  
+
 }
-.Company ul li, .Get ul li, .Follow ul li{
+
+.Company ul li,
+.Get ul li,
+.Follow ul li {
   color: white;
   margin: .4rem;
 
 }
 
-.Get h4:hover{
+.Get h4:hover {
 
   display: flex;
   flex-direction: column;
   color: #d0b6b6;
 
 }
-.Company h4, .Get h4, .Follow h4{
- 
+
+.Company h4,
+.Get h4,
+.Follow h4 {
+
   font-size: 1.4rem;
 }
-.Company h4:hover{
+
+.Company h4:hover {
   color: #d0b6b6;
-  font-size:1.4rem;
+  font-size: 1.4rem;
 }
 
-.Follow h4:hover{
+.Follow h4:hover {
   color: #d0b6b6;
-  font-size:1.4rem;
+  font-size: 1.4rem;
 }
-.last-div{
- 
+
+.last-div {
+
   font-size: 20px;
   margin-top: -29px;
   display: flex;
@@ -707,42 +900,48 @@ footer {
   align-content: center;
   font-weight: bold;
 }
-.Follow{
+
+.Follow {
   display: flex;
   flex-direction: column;
   margin-top: -4rem;
 }
-.follow-show{
+
+.follow-show {
   margin: 0px;
 }
-.insta a{
+
+.insta a {
   list-style: none;
   text-decoration: none;
   text-align: center;
- 
+
   font-size: 1.1rem;
   margin: 0rem;
 }
-.chat-us{
+
+.chat-us {
   position: fixed;
   height: 60px;
   width: 60px;
   margin: 500px 30px;
 
-  
+
 }
-.chat-us:hover{
+
+.chat-us:hover {
   position: fixed;
   /* float:; */
   height: 62px;
   width: 62px;
   margin: 500px 30px;
-  
+
   background-color: green;
   color: green;
-  animation:reverse 2s;
+  animation: reverse 2s;
 }
-.chat{
+
+.chat {
   position: absolute;
   display: flex;
   /* float:; */
@@ -753,17 +952,19 @@ footer {
   /* background-color: green;
  
   animation:reverse 2s; */
-  
+
 }
-@media(max-width:998px){
-  html{
+
+@media(max-width:998px) {
+  html {
     font-size: 70%;
-    
+
   }
- 
+
 }
-@media(max-width:768px){
-  html{
+
+@media(max-width:768px) {
+  html {
     font-size: 60%;
   }
 }

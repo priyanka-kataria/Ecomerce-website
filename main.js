@@ -5,6 +5,4 @@ import { showProductContainer } from './template';
 
 showProductContainer(products);
 
-// products.forEach((prodElem)=>{
 
-// })
